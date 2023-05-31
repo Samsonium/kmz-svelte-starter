@@ -1,0 +1,30 @@
+# Добавляем игнорирование всех файлов и папок,
+# а затем убираем игнорирование нужных нам элементов.
+# Это сделано для того, чтобы ненужны файлы не попадали
+# в репозиторий проекта и несоздавали мусорную структуру
+
+/*
+
+# Директории
+!/playwright
+/playwright/.cache
+!/public
+!/src
+!/test
+
+# Файлы
+!/.env.dev
+!/.eslintignore
+!/.eslintrc.json
+!/.gitignore
+!/.npmrc
+!/.prettierignore
+!/.prettierrc.json
+!/index.html
+!/package.json
+!/package-lock.json
+!/playwright-ct.config.ts
+!/svelte.config.js
+!/tsconfig.json
+!/tsconfig.node.json
+!/vite.config.ts

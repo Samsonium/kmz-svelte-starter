@@ -1,0 +1,64 @@
+{
+  "env": {
+    "browser": true,
+    "node": false,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "src/**/*.svelte"
+      ],
+      "processor": "svelte3/svelte3"
+    }
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "svelte3"
+  ],
+  "rules": {
+    "@typescript-eslint/ban-types": [
+      "off"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "never"
+    ],
+    "object-curly-spacing": [
+      "error",
+      "never"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "no-tabs": [
+      "error",
+      {
+        "allowIndentationTabs": true
+      }
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ]
+  }
+}
